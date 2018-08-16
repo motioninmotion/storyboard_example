@@ -5,7 +5,7 @@ class MasterViewController < UIViewController
   outlet :text_field, UITextField
   outlet :button, UIButton
 
-  def button_pressed(sender)
+  def button_pressed(_)
     title.text = text_field.text
     text_field.text = ""
   end
